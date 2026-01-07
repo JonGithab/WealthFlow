@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Card + soft shadow */
+.card {
+  @apply bg-ginger-100 rounded-2xl p-4 shadow-soft;
+}
+
+/* Ginger CTA button */
+.btn {
+  @apply bg-ginger-300 hover:bg-ginger-400 text-ginger-900 font-semibold rounded-xl px-4 py-3 transition-colors;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-sm bg-ginger-200 text-ginger-900;
+}
+
+/* Progress bars */
+.progress {
+  @apply h-2 rounded-full bg-ginger-200;
+}
+.progress > span {
+  @apply block h-2 rounded-full bg-leaf;
+}
+
