@@ -58,6 +58,7 @@ export default function Quiz() {
         	{ans}
       	</button>
     	))}
-  	</div>
+	</div>
 	</div>
   )
+}
