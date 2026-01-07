@@ -34,7 +34,7 @@ export function StoreProvider({ children }) {
   }
 
   const value = useMemo(() => ({ data, update }), [data])
-  return <Store.Provider value={value}>{children}</Store.Provider>
+  return React.createElement(Store.Provider, { value }, children)
 }
 
 export function useStore() {

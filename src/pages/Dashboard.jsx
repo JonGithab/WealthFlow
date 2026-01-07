@@ -1,4 +1,5 @@
 import { useStore } from '../state/store'
+import { Link } from 'react-router-dom'
 import SpendingWheel from '../components/SpendingWheel'
 
 export default function Dashboard() {
@@ -16,18 +17,20 @@ export default function Dashboard() {
 
   	<SpendingWheel categories={data.categories} />
 
-  	<section className="grid grid-cols-3 gap-3">
-    	/trackerTracker</a>
-    	/goalsGoals</a>
-    	/learnLearn</a>
-  	</section>
+	   <section className="grid grid-cols-3 gap-3">
+	    	<Link to="/tracker" className="card text-center">Tracker</Link>
+	    	<Link to="/goals" className="card text-center">Goals</Link>
+	    	<Link to="/learn" className="card text-center">Learn</Link>
+	   	</section>
 
   	<section className="card">
     	<h3 className="font-semibold mb-2">Interactive Modules</h3>
-    	<div className="grid grid-cols-2 gap-3">
-      	/learnBudgeting • 5 min</a>
-      	/quizPersonality Quiz</a>
-    	</div>
+	      <div className="grid grid-cols-2 gap-3">
+	      	<Link to="/learn" className="card">Budgeting • 5 min</Link>
+	      	<Link to="/quiz" className="card">Personality Quiz</Link>
+	      	</div>
   	</section>
-	</div>
-  )
+	 	</div>
+	  )
+
+	}
