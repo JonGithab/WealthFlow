@@ -26,3 +26,4 @@ export default function QuizResult() {
   	<Link to="/learn" className="btn w-full">Start your personalized learning path</Link>
 	</div>
   )
+}
